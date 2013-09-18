@@ -16,7 +16,7 @@ Bucket.list
 Bucket.create('kitty') #创建Bucket
 Bucket.create('kitty', access: 'public-read') #创建Bucket时指定权限,如果此Bucket,则只修改权限
 
-kitty = Service.find('kitty') #查找Bucket
+kitty = Bucket.find('kitty') #查找Bucket
 
 kitty.objects #罗列此Bucket的所有文件 TODO size
 Bucket.objects('kitty')
